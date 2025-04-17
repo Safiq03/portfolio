@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S Mohammed Safiq Nishar - Portfolio</title>
     <style>
-        /* General Styles */
+        /* Existing styles remain unchanged */
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
             color: #ffffff;
             background: #0d1117;
             text-align: center;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-x: hidden;
             scroll-behavior: smooth;
         }
 
@@ -44,15 +44,15 @@
                 transform: translateY(0);
             }
         }
+
         #education ul, #contact ul {
-        list-style-type: none;
+            list-style-type: none;
             padding: 0;
             margin: 0;
         }
 
-
         .profile-picture {
-            width: 120px;
+            width: 125px;
             height: 120px;
             border-radius: 50%;
             border: 3px solid #1f6feb;
@@ -171,16 +171,18 @@
             transform: rotateY(180deg);
             background: #1f6feb;
         }
+
         .project-back a {
-            color: #e4eb1f; /* Replace this with your desired color */
+            color: #e4eb1f;
             text-decoration: none;
             transition: color 0.3s ease-in-out;
         }
 
         .project-back a:hover {
-            color: #000000; /* Change this hover color as desired */
+            color: #000000;
             text-decoration: underline;
         }
+
         .certification-card {
             background: #21262d;
             border-radius: 8px;
@@ -234,8 +236,6 @@
             color: #8b949e;
         }
 
-        
-
         #contact {
             display: flex;
             flex-direction: column;
@@ -261,11 +261,57 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             background: #2c2f36;
         }
+
+        /* Work Experience Card Style */
+        .experience-card {
+            background: #21262d;
+            border-radius: 8px;
+            width: 300px;
+            padding: 1rem;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .experience-card:hover {
+            transform: scale(1.03);
+            background: linear-gradient(to bottom right, #1f6feb, #21262d);
+        }
+        .internship-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.internship-card {
+    background: #21262d;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left;
+}
+
+.internship-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom right, #1f6feb, #21262d);
+}
+
+.internship-card h4 {
+    margin-top: 0;
+    color: #58a6ff;
+}
+
     </style>
 </head>
 <body>
     <header>
-        <img src="enhanced image.png" alt="Profile Picture" class="profile-picture">
+        <img src="enhanced image.JPG" alt="Profile Picture" class="profile-picture">
         <h1>S Mohammed Safiq Nishar</h1>
         <h2>Full Stack App Developer | Cyber Security Enthusiast</h2>
     </header>
@@ -281,10 +327,58 @@
             </p>
         </section>
 
+      <!-- Work Experience Section -->
+<section id="experience" class="section">
+    <h3>Work Experience</h3>
+    <div class="experience-container">
+        <div class="experience-card">
+            <h4>Flutter Developer</h4>
+            <p><strong>Company:</strong> Ak Infopark</p>
+            <p><strong>Type:</strong> Full Time, On-Site</p>
+            <p><strong>Location:</strong> Nagercoil, Tamil Nadu, India</p>
+            <p><strong>Duration:</strong> December 2024 – February 2025</p>
+        </div>
+    </div>
+</section>
+
+<!-- Internships Section -->
+<section id="internships" class="section">
+    <h3>Internships</h3>
+    <div class="internship-container">
+        <div class="internship-card">
+            <h4>Java Intern</h4>
+            <p><strong>Company:</strong> Vcodez</p>
+            <p><strong>Type:</strong> Remote</p>
+            <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+            <p><strong>Duration:</strong> December 2024 – February 2025</p>
+        </div>
+        <div class="internship-card">
+            <h4>Full Stack Development Intern</h4>
+            <p><strong>Company:</strong> ilife Technologies</p>
+            <p><strong>Type:</strong> On-Site</p>
+            <p><strong>Location:</strong> Tiruchirappalli, Tamil Nadu, India</p>
+            <p><strong>Duration:</strong> 05 April 2022 – 09 April 2022</p>
+        </div>
+    </div>
+</section>
+
+
         <!-- Projects Section -->
         <section id="projects" class="section">
             <h3>Projects</h3>
             <div class="project-container">
+                <div class="project-card">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <h4>Dark Web Exposure Tracking App</h4>
+                            <p>Dark Web Exposure Tracker is a mobile application created by flutter. It is designed to help users check if their personal data has been exposed on the dark web.</p>
+                        </div>
+                        <div class="project-back">
+                            <p>GitHub Repository</p>
+                            <a href="https://github.com/Safiq03/Dark-Web-Exposure-Tracker-App-Flutter" target="_blank">View Repo</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-card">
                     <div class="project-inner">
                         <div class="project-front">
@@ -394,7 +488,7 @@
             <div class="skills-container">
                 <div class="skill">
                     <span>Flutter</span>
-                    <div class="progress-bar"><div style="width: 95%;"></div></div>
+                    <div class="progress-bar"><div style="width: 99%;"></div></div>
                 </div>
                 <div class="skill">
                     <span>Java</span>
@@ -402,7 +496,7 @@
                 </div>
                 <div class="skill">
                     <span>Dart</span>
-                    <div class="progress-bar"><div style="width: 90%;"></div></div>
+                    <div class="progress-bar"><div style="width: 99%;"></div></div>
                 </div>
                 <div class="skill">
                     <span>Kotlin</span>
@@ -451,7 +545,7 @@
     </main>
 
     <footer>
-        <p>© 2024 S Mohammed Safiq Nishar. All rights reserved.</p>
+        <p>© 2025 S Mohammed Safiq Nishar. All rights reserved.</p>
     </footer>
 
     <script>
